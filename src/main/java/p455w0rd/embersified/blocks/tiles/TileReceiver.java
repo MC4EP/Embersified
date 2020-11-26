@@ -23,6 +23,7 @@ public class TileReceiver extends TileEntityReceiver {
 
     @Override
     public void update() {
+        super.update();
         ++ticksExisted;
         BlockPos pos = getPos();
         IBlockState state = getWorld().getBlockState(pos);
